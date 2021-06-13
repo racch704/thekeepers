@@ -1,0 +1,110 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+
+/**NAVIGATION**/
+#navbar {
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    z-index: 1;
+    margin-bottom: 7em;
+  }
+.navbar {
+    padding-left: 0 3em 0 3em;
+    overflow: hidden;
+    background-color: white;
+}
+.navbar-nav li {
+    margin-left : 2vw;
+    margin-right : 2vw;
+    white-space: nowrap;
+    font-size: 1.8vw;
+}
+#navbar .nav-link {
+    color: #52664d;
+}
+#navbar .nav-link:hover {
+    color: #8ca84a;
+}
+#logo {
+    width: 10vw;
+    min-width: 150px;
+    padding-top: .1em;
+    padding-bottom: .1em;
+    z-index: 2;
+}
+
+.hero-image {
+    background-image: linear-gradient(#0000006b, #0000006b), url(../images/pod/pod1.jpg);
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 73%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+
+
+
+
+
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 33.3%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: auto;
+    filter: grayscale(0.3) brightness(0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    size: cover;
+  }
+  .column img:hover {
+    filter: grayscale(0);
+  }
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .column img {
+      filter: grayscale(0) brightness(1);
+    }
+  }
+  

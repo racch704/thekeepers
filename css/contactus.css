@@ -1,0 +1,138 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+
+/**NAVIGATION**/
+#navbar {
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    z-index: 1;
+    margin-bottom: 7em;
+  }
+.navbar {
+    padding-left: 0 3em 0 3em;
+    overflow: hidden;
+    background-color: white;
+}
+.navbar-nav li {
+    margin-left : 2vw;
+    margin-right : 2vw;
+    white-space: nowrap;
+    font-size: 1.8vw;
+}
+#navbar .nav-link {
+    color: #52664d;
+}
+#navbar .nav-link:hover {
+    color: #8ca84a;
+}
+#logo {
+    width: 10vw;
+    min-width: 150px;
+    padding-top: .1em;
+    padding-bottom: .1em;
+    z-index: 2;
+}
+
+.hero-image {
+    background-image: linear-gradient(#0000004d, #0000004d), url(../images/contactus/viewcontact.jpg);
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.background {
+    background-color: #7f9fc4a2;
+    padding: 0;
+    margin: 0%;
+}
+.information {
+    text-align: center;
+    margin: 0 25% 0 25%;
+    padding: 0.5% 0 0.5% 0;
+}
+.text {
+    text-align: center;
+    background-color: #7f9fc470;
+}
+
+
+
+.card {
+    box-shadow: 0 0 10px 5px #7f9fc4b2;
+}
+.head {
+    background: #507399;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: -40px;
+    box-shadow: 0 4px 20px 0px #7f9fc4b2;
+}
+.head h3 {
+    font-size: 2.7em;
+    font-weight: bold;
+    color: rgb(40, 40, 40);
+}
+
+.effect-1 {
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 7px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 2em;
+}
+.effect-1 ~ .Focus-border {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #7f9fc4b2;
+    transition: 0.4s;
+}
+.effect-1:focus ~ .Focus-border {
+    width: 100%;
+    transition: 0.4s;
+    left: 0%;
+}
+.btn1 {
+    background: #7f9fc4b2;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 140px;
+    cursor: pointer;
+}
+.btn1:hover {
+    box-shadow:  0 4px 20px 0px #7f9fc4b2;
+}
+
+.form p {
+    font-size: 1.5em;
+}
+  @media (min-width: 992px) {
+      .contact-form {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+      }
+  } 
