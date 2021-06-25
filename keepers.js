@@ -13,10 +13,22 @@ if (prevScrollpos > currentScrollPos) {
 prevScrollpos = currentScrollPos;
 } 
 
-
-//pod gallery
-$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+//gallery pop-up
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
-});
+  });
+
+
+
+
+
+
+
+  
+
+
+
+
+
 

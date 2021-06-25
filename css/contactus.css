@@ -1,24 +1,28 @@
-body,
-html {
-    height: 100%;
+*{
     margin: 0;
     padding: 0;
-    background-color: white;
-  }
-
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: butler;
+    src: url(../text/butler.otf);
+}
+@font-face {
+    font-family: lato;
+    src: url(../text/lato.ttf);
+}
 /**NAVIGATION**/
 #navbar {
     position: fixed; /* Make it stick/fixed */
     top: 0; /* Stay on top */
     width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
-    z-index: 1;
-    margin-bottom: 7em;
-  }
+    z-index: 4;
+}
 .navbar {
     padding-left: 0 3em 0 3em;
     overflow: hidden;
-    background-color: white;
+    background-color: #f9faff;
 }
 .navbar-nav li {
     margin-left : 2vw;
@@ -28,6 +32,8 @@ html {
 }
 #navbar .nav-link {
     color: #52664d;
+    font-family: butler;
+    font-weight: 600;
 }
 #navbar .nav-link:hover {
     color: #8ca84a;
@@ -37,7 +43,7 @@ html {
     min-width: 150px;
     padding-top: .1em;
     padding-bottom: .1em;
-    z-index: 2;
+    z-index: 4;
 }
 
 .hero-image {
@@ -56,9 +62,11 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    font-family: butler;
+
 }
 .background {
-    background-color: #7f9fc4a2;
+    background-color: #548bc9a2;
     padding: 0;
     margin: 0%;
 }
@@ -67,68 +75,67 @@ html {
     margin: 0 25% 0 25%;
     padding: 0.5% 0 0.5% 0;
 }
+.information a {
+    color: #3e7400;
+    text-align: ;
+}
+.information a:hover {
+    font-weight: 700;
+}
 .text {
     text-align: center;
-    background-color: #7f9fc470;
+    background-color: #4483c75d;
+    font-family: lato;
+    color: rgb(27, 72, 122);
+}
+.icon {
+    height: 7vh;
+    width: 3vw;
+}
+.icon1 {
+    height: 5.9vh;
+    width: 2.5vw;
+}
+
+.calendar {
+    margin-bottom: 10em;
 }
 
 
+//CONTACT-FORM
 
-.card {
-    box-shadow: 0 0 10px 5px #7f9fc4b2;
-}
-.head {
-    background: #507399;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: -40px;
-    box-shadow: 0 4px 20px 0px #7f9fc4b2;
-}
-.head h3 {
-    font-size: 2.7em;
-    font-weight: bold;
-    color: rgb(40, 40, 40);
-}
-
-.effect-1 {
-    border: 0;
-    outline: none;
-    width: 100%;
-    padding: 7px 0;
-    border-bottom: 1px solid #ccc;
-    font-size: 2em;
-}
-.effect-1 ~ .Focus-border {
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    width: 0%;
-    height: 2px;
-    background-color: #7f9fc4b2;
-    transition: 0.4s;
-}
-.effect-1:focus ~ .Focus-border {
-    width: 100%;
-    transition: 0.4s;
-    left: 0%;
-}
-.btn1 {
-    background: #7f9fc4b2;
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
     color: white;
-    outline: none;
+    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
-    height: 40px;
-    width: 140px;
+    border-radius: 4px;
     cursor: pointer;
-}
-.btn1:hover {
-    box-shadow:  0 4px 20px 0px #7f9fc4b2;
-}
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  .message {
+    padding-bottom: -20%;
+  } 
+  /* Add a background color and some padding around the form */
 
-.form p {
-    font-size: 1.5em;
-}
+
   @media (min-width: 992px) {
       .contact-form {
           width: 100%;
@@ -136,3 +143,69 @@ html {
           overflow: hidden;
       }
   } 
+
+  .footer-heading {
+    padding-top: 1em;
+}
+
+
+
+.instagram {
+    margin-top: 20em;
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+
+
+.footer-image {
+    background-image: url(../images/footerimg3.jpg);
+    height: 150vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    margin-top: -60vh;
+}
+footer p {
+    color: #e1eaf3;
+}
+.info {
+    padding-top: 2em;
+}
+.info a {
+    color: #6dcc00;
+}
+footer {
+    background-color: #46525F;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    overflow: hidden;
+}
+.footer-content {
+    padding: 1em 10em 0 8em;
+}
+footer h3 {
+    color: #97cc8c;
+}
+.social-media {
+    text-align: right;
+    padding-right: 4em;
+}
+.copyright {
+    padding: 0;
+    margin: 0;
+}
+.facebook {
+    color: #3b5998;
+    padding: .5em;
+}
+.facebook:hover {
+    box-shadow:  0 5px 20px 0px #252e22;
+}
+.instagram {
+    color: #e1306c;
+    padding: .5em;
+}

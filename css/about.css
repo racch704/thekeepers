@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: butler;
+    src: url(../text/butler.otf);
+}
+@font-face {
+    font-family: lato;
+    src: url(../text/lato.ttf);
+}
+/**NAVIGATION**/
+#navbar {
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    z-index: 4;
+}
+.navbar {
+    padding-left: 0 3em 0 3em;
+    overflow: hidden;
+    background-color: #f9faff;
+    margin-bottom: 10%;
+}
+.navbar-nav li {
+    margin-left : 2vw;
+    margin-right : 2vw;
+    white-space: nowrap;
+    font-size: 1.8vw;
+}
+#navbar .nav-link {
+    color: #52664d;
+    font-family: butler;
+    font-weight: 600;
+}
+#navbar .nav-link:hover {
+    color: #8ca84a;
+}
+#logo {
+    width: 10vw;
+    min-width: 150px;
+    padding-top: .1em;
+    padding-bottom: .1em;
+    z-index: 4;
+}
+
+.heading {
+    margin-top: 20em auto 0 auto;
+}
+h1 {
+    font-family: butler;
+    color: #3b5998;
+    text-align: center;
+}
+.about { 
+    margin: 2em auto 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-family: butler;
+    color: #3560be;
+}
+p {
+    font-family: lato;
+}
+.dog {
+    margin: 1em auto;
+    padding: 10px;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-heading {
+    padding-top: 1em;
+}
+.footer-image {
+    background-image: url(../images/footerimg3.jpg);
+    height: 150vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    margin-top: -80vh;
+}
+footer p {
+    color: #e1eaf3;
+}
+.info {
+    padding-top: 2em;
+}
+.info a {
+    color: #6dcc00;
+}
+
+footer {
+    background-color: #46525F;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    overflow: hidden;
+}
+.footer-content {
+    padding: 1em 10em 0 8em;
+}
+footer h3 {
+    color: #97cc8c;
+}
+.social-media {
+    text-align: right;
+    padding-right: 4em;
+}
+.copyright {
+    padding: 0;
+    margin: 0;
+}
+.facebook {
+    color: #3b5998;
+    padding: .5em;
+}
+.facebook:hover {
+    box-shadow:  0 5px 20px 0px #252e22;
+}
+.instagram {
+    color: #e1306c;
+    padding: .5em;
+}

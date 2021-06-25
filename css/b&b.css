@@ -1,24 +1,28 @@
-body,
-html {
-    height: 100%;
+*{
     margin: 0;
     padding: 0;
-    background-color: white;
-  }
-
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: butler;
+    src: url(../text/butler.otf);
+}
+@font-face {
+    font-family: lato;
+    src: url(../text/lato.ttf);
+}
 /**NAVIGATION**/
 #navbar {
     position: fixed; /* Make it stick/fixed */
     top: 0; /* Stay on top */
     width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
-    z-index: 1;
-    margin-bottom: 7em;
-  }
+    z-index: 4;
+}
 .navbar {
     padding-left: 0 3em 0 3em;
     overflow: hidden;
-    background-color: white;
+    background-color: #f9faff;
 }
 .navbar-nav li {
     margin-left : 2vw;
@@ -28,6 +32,8 @@ html {
 }
 #navbar .nav-link {
     color: #52664d;
+    font-family: butler;
+    font-weight: 600;
 }
 #navbar .nav-link:hover {
     color: #8ca84a;
@@ -37,7 +43,7 @@ html {
     min-width: 150px;
     padding-top: .1em;
     padding-bottom: .1em;
-    z-index: 2;
+    z-index: 4;
 }
 
 .hero {
@@ -45,14 +51,152 @@ html {
   }
 
 .carousel-item {
-height: 100vh;
-width: 100%;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-position: relative;
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 .carousel-item img {
-    height: 100vh;
     width: 100%;
+}
+
+.welcome {
+    text-align: center;
+    padding-bottom: 5em;
+}
+.welcome h2 {
+    padding-top: 1em;
+    font-family: butler;
+    font-size: 2.9em;
+    color: #52664d;
+}
+.welcome h3 {
+    font-family: butler;
+    font-size: 1.8em;
+    padding-top: .7em;
+    line-height: 1;
+    color: #8ca84a;
+}
+.welcome p {
+    padding-top: 1em;
+    font-family: lato;
+    font-size: 1.1em;
+    color: #535e3b;
+    text-align: left;
+}
+
+.room-name {
+    font-family: butler;
+    font-size: 2.6em;
+    color: #3b5998;
+    font-weight: bold;
+    padding-left: .5em;
+}
+.text-justify {
+    font-family: lato;
+    font-size: 1.1em;
+    padding-left: .8em;
+    color: #3b5998;
+}
+
+
+.facilities {
+    background-image: linear-gradient(#f3f4ffcc, #d4d6ddb2), url(../images/index/river.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding-top: 2.5em;
+    padding-bottom: 1em;
+    margin-top: 8em;
+}
+.heading {
+    font-family: butler;
+    color: #3b5998;
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: .7em;
+}
+.facilities h3 {
+    color: #304574;
+    font-family: butler;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: .5em;
+}
+.facilities li {
+    list-style-type: none;
+    padding-top: 3px;
+    font-family: lato;
+    padding-left: 20%;
+}
+.icons {
+    height: 6vh;
+    width: 2.5vw;
+}
+.calendar {
+    margin-bottom: 10em;
+    height:auto;
+}
+.container {
+    height: 100%;
+    width: auto;
+}
+
+.footer-heading {
+    padding-top: 1em;
+}
+.footer-image {
+    background-image: url(../images/footerimg3.jpg);
+    height: 150vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    margin-top: -60vh;
+}
+footer p {
+    color: #e1eaf3;
+}
+.info {
+    padding-top: 2em;
+}
+.info a {
+    color: #6dcc00;
+}
+footer {
+    background-color: #46525F;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    overflow: hidden;
+}
+.footer-content {
+    padding: 1em 10em 0 8em;
+}
+footer h3 {
+    color: #97cc8c;
+}
+.social-media {
+    text-align: right;
+    padding-right: 4em;
+}
+.copyright {
+    padding: 0;
+    margin: 0;
+}
+.facebook {
+    color: #3b5998;
+    padding: .5em;
+}
+.facebook:hover {
+    box-shadow:  0 5px 20px 0px #252e22;
+}
+.instagram {
+    color: #e1306c;
+    padding: .5em;
 }

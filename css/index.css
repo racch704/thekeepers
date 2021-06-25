@@ -11,7 +11,6 @@
     font-family: lato;
     src: url(../text/lato.ttf);
 }
-
 /**NAVIGATION**/
 #navbar {
     position: fixed; /* Make it stick/fixed */
@@ -23,7 +22,7 @@
 .navbar {
     padding-left: 0 3em 0 3em;
     overflow: hidden;
-    background-color: white;
+    background-color: #f9faff;
 }
 .navbar-nav li {
     margin-left : 2vw;
@@ -46,7 +45,6 @@
     padding-bottom: .1em;
     z-index: 4;
 }
-
 /*** HERO IMG ***/
 .hero {
     display: flex;
@@ -82,8 +80,6 @@
     box-shadow:  0 5px 20px 0px #252e22;
     font-weight: 620;
 }
-
-/** INTRO **/
 .intro {
     margin-top: 5em;
     margin-bottom: 5em;
@@ -94,25 +90,20 @@
     letter-spacing: .7px;
     line-height: 1.5em;
     color: #1a2d42;
+    font-size: 1.1em;
 }
-.pond {
-    
-	background-image: linear-gradient(#ffffff4d, #ffffff4d), url(../images/index/pond1.jpg); 
-	background-position: right; 
+.pond-pic {
+	background-image: linear-gradient(#ffffff65, #ffffff65), url(../images/index/pond.png);
+    background-position: right bottom; 
 	background-repeat: no-repeat; 
     background-size: contain;
-    background-position-y: -7em;
-    height: 40em;
-    width: 100%; /**65em;**/
-    margin:0 auto;
-    overflow: hidden;
-}
-.pond img {
-    opacity: ;
+    height: 115vh;
+    width: 90%; /**65em;**/
+    margin: -90vh auto 20em auto;
 }
 .intro h2 {
     font-family: butler;
-    font-size: 3em;
+    font-size: 3.7em;
     color: #46525F;
     font-weight: bold;
 }
@@ -120,13 +111,18 @@ h3 {
     font-family: butler;
     font-size: 1.5em;
     color: #5b7fa8;
-    font-weight:600;
+    font-weight: 600;
 }
-/** FEATURED IMGS **/
+.pond p {
+    text-align: left;
+    font-family: lato;
+    color: #313d2e;
+}
 .facilities {
     overflow: hidden;
-    margin: 0 4em 0 4em; 
+    margin-top: -17em; 
     text-align: center;
+    padding-bottom: 5em;
 }
 .facilities h2 {
     padding: 1em .5em .5em .5em;
@@ -144,7 +140,6 @@ h3 {
 .rmv-padding {
     padding: 0%;
 }
-
 #breakfast {
     background-image: url(../images/index/breakfast.jpg);
     background-position: center;
@@ -154,25 +149,26 @@ h3 {
     background-attachment: fixed;
     height: 60vh;
 }
-
-
-
 .your-stay {
     background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/index/paws.jpg); 
-	background-position: right; 
-	background-repeat: repeat; 
+	background-repeat: repeat;
     background-size: contain;
-    margin-top: -2em;
-    margin-bottom: -20em;
     z-index: 0;
+    text-align: center;
 }
 .your-stay h2 {
+    font-size: 3em;
     color: #46525F;
+}
+.your-stay h3 {
+    font-size: 2em;
 }
 .your-stay p {
     color: #384b61;
 }
-
+.footer-heading {
+    padding-top: 1em;
+}
 .footer-image {
     background-image: url(../images/footerimg3.jpg);
     height: 150vh;
@@ -180,11 +176,16 @@ h3 {
     background-size: cover;
     position: relative;
     z-index: -1;
-    margin-top: -100vh;
+    margin-top: -80vh;
 }
-
 footer p {
-    color: #FAF6EE;
+    color: #e1eaf3;
+}
+.info {
+    padding-top: 2em;
+}
+.info a {
+    color: #6dcc00;
 }
 
 footer {
@@ -193,19 +194,34 @@ footer {
     width: 100%;
     height: auto;
     margin-top: 0;
-    padding-top: 2em;
     overflow: hidden;
 }
-
-footer h5 {
-    color: #FAF6EE;
+.footer-content {
+    padding: 1em 10em 0 8em;
 }
-
-
-
+footer h3 {
+    color: #97cc8c;
+}
+.social-media {
+    text-align: right;
+    padding-right: 4em;
+}
+.copyright {
+    padding: 0;
+    margin: 0;
+}
+.facebook {
+    color: #3b5998;
+    padding: .5em;
+}
+.facebook:hover {
+    box-shadow:  0 5px 20px 0px #252e22;
+}
+.instagram {
+    color: #e1306c;
+    padding: .5em;
+}
 // Media Queries //
-
-
 
 
 
