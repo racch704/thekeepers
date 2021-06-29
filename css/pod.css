@@ -56,6 +56,7 @@
     position: relative;
 }
 .hero-text {
+    padding-left: 8%;
     text-align: left;
     position: absolute;
     top: 73%;
@@ -63,7 +64,7 @@
     transform: translate(-50%, -50%);
     color: white;
   }
-  .btn {
+.btn {
     position: relative;
     display: inline-flex;
     padding: 1em , 1em;
@@ -137,15 +138,20 @@
     padding: 4px;
     justify-content: center;
 }
+
+
 .pod-facilities {
+
+
     background-image: linear-gradient(#f3f4ffcc, #d4d6ddb2), url(../images/pod/hills.jpg);
-    height: 90vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    padding-top: 2em;
+    padding-top: 2.5em;
+    padding-bottom: 1em;
+    margin-top: 8em;
     z-index: 1;
 }
 .pod-facilities h2 {

@@ -36,7 +36,7 @@
     font-weight: 600;
 }
 #navbar .nav-link:hover {
-    color: #8ca84a;
+    background-color: #fff;
 }
 #logo {
     width: 10vw;
@@ -63,11 +63,12 @@
     color: #FAF6EE;
     font-weight: 900;
     z-index: 0;
+
 }
 .btn {
     position: relative;
     display: inline-flex;
-    padding: 1em , 1em;
+    padding: 1% , 1%;
     background: #52664d;
     color: #8ca84a;
     text-decoration: none;
@@ -80,6 +81,7 @@
     box-shadow:  0 5px 20px 0px #252e22;
     font-weight: 620;
 }
+
 .intro {
     margin-top: 5em;
     margin-bottom: 5em;
