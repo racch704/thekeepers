@@ -45,43 +45,42 @@
     padding-bottom: .1em;
     z-index: 4;
 }
-/*** HERO IMG ***/
-.hero {
-    display: flex;
-}
-.carousel-item {
-    max-height: 92vh;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.hero-carousel {
+    height: 32rem;
+    background: #777;
+    color: white;
     position: relative;
+    background-position: center;
+    background-size: cover;
 }
-.headline {
+.hero {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 5%;
+}
+h1 {
     font-family: butler;
     font-size: 5vw;
     color: #FAF6EE;
     font-weight: 900;
     z-index: 0;
-
+    text-align: center;
 }
 .btn {
-    position: relative;
-    display: inline-flex;
-    padding: 1% , 1%;
-    background: #52664d;
+    font-family: lato;
     color: #8ca84a;
-    text-decoration: none;
-    letter-spacing: .09em;
-    font-weight: 600;
+    background: #52664d;
+    border-color: #52664d;
 }
 .btn:hover {
-    color: #52664d;
     background: #8ca84a;
-    box-shadow:  0 5px 20px 0px #252e22;
-    font-weight: 620;
+    color: #52664d;
+    border-color: #8ca84a;
+    box-shadow:  0 5px 20px 0px #71b45b;
+    font-weight: 600;
 }
-
 .intro {
     margin-top: 5em;
     margin-bottom: 5em;
@@ -100,7 +99,7 @@
 	background-repeat: no-repeat; 
     background-size: contain;
     height: 115vh;
-    width: 90%; /**65em;**/
+    width: 90%; /**65em; ***/
     margin: -90vh auto 20em auto;
 }
 .intro h2 {
@@ -224,14 +223,3 @@ footer h3 {
     padding: .5em;
 }
 // Media Queries //
-
-
-
-
-
-
-
-
-
-
-  
