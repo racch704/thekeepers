@@ -20,7 +20,7 @@
     z-index: 4;
 }
 .navbar {
-    padding-left: 0 3em 0 3em;
+    padding: 0 3em;
     overflow: hidden;
     background-color: #f9faff;
 }
@@ -67,7 +67,7 @@
 .btn {
     position: relative;
     display: inline-flex;
-    padding: 1em , 1em;
+    padding: 1em 1em;
     background: #8ca84a;
     color: #52664d;
     text-decoration: none;
@@ -78,7 +78,7 @@
     color: #8ca84a;
     background: #52664d;
     box-shadow:  0 5px 20px 0px #71b45b;
-    font-weight: 620;
+    font-weight: 700;
 }
 
 .hero-text {
